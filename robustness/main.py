@@ -5,7 +5,7 @@ The main file, which exposes the robustness command-line tool, detailed in
 
 from argparse import ArgumentParser
 import os
-import git
+#import git
 import torch as ch
 
 import cox
