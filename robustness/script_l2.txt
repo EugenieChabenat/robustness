@@ -5,4 +5,4 @@
 #SBATCH --mem=128gb                  # memory
 #SBATCH --gres=gpu:gtx2080:8 
 
-python -m main --dataset imagenet --data /mnt/smb/locker/issa-locker/imagenet --adv-train 0 --arch resnet18 --out-dir /logs/checkpoints/dir/
+python -m main --dataset imagenet --data /mnt/smb/locker/issa-locker/imagenet --adv-train 0 --arch resnet50 --out-dir /home/ec3731/checkpoints/barlowtwins/checkpoints/
