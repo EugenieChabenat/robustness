@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH --job-name=bash        
+#SBATCH --mail-type=ALL        
+#SBATCH --mail-user={ec3731@columbia.edu} # your email
+#SBATCH --mem=128gb                  # memory
+#SBATCH --gres=gpu:gtx2080:8 
+
+python -m main --dataset imagenet --data /mnt/smb/locker/issa-locker/imagenet --adv-train 0 --arch resnet18 --out-dir /logs/checkpoints/dir/
